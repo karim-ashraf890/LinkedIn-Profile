@@ -1,0 +1,62 @@
+body {
+    background-color: #F4F2EE;
+}
+
+.container {
+    /* styles here if needed */
+}
+
+.hyder {
+    background-color: white;
+    position: static;
+    height: 50px;
+}
+
+.linkedIn-icon-header {
+    margin-top: 10px;
+    color: #0A66C2;
+    font-size: 24px;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 6px 12px;
+    background-color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.search-text {
+    position: absolute;
+    left: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: none;
+    background-color: transparent;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: none;
+    outline: none;
+}
