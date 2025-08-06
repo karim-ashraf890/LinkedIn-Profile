@@ -15,3 +15,12 @@ $(document).ready(function () {
         tags: true
     });
 });
+document.querySelector('.search-icon').addEventListener('click', function () {
+    const wrapper = document.querySelector('.search-wrapper');
+    wrapper.classList.add('expanded');
+
+    // فتح select2 تلقائيًا
+    setTimeout(() => {
+        $('.js-example-placeholder-multiple').select2('open');
+    }, 100); // استنى شوية بعد الظهور
+});

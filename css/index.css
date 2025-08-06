@@ -9,7 +9,7 @@ body {
 .hyder {
     background-color: white;
     position: static;
-    height: 50px;
+    height: 75px;
 }
 
 .linkedIn-icon-header {
@@ -23,11 +23,10 @@ body {
     align-items: center;
     margin-top: 10px;
     gap: 10px;
-    width: 100%;
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 30px;
-    border: 1px solid #ccc;
+    border: 1px solid #B2B2B2;
     border-radius: 25px;
     padding: 6px 12px;
     background-color: #fff;
@@ -59,4 +58,47 @@ body {
 .select2-container--default.select2-container--focus .select2-selection--multiple {
     border: none;
     outline: none;
+}
+
+.container-header-icon {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background: #fff;
+}
+
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.hyder-icon {
+    font-size: 17px;
+
+}
+
+.profile-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* margin-bottom: 4px; */
+}
+
+.icon-text {
+    margin-top: 3px;
+}
+
+.icon-item:hover,
+.icon-item:hover i,
+.icon-item:hover span {
+    color: black;
 }
