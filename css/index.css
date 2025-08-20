@@ -90,7 +90,6 @@ body {
     height: 20px;
     border-radius: 50%;
     object-fit: cover;
-    /* margin-bottom: 4px; */
 }
 
 .icon-text {
@@ -101,4 +100,317 @@ body {
 .icon-item:hover i,
 .icon-item:hover span {
     color: black;
+}
+
+.more-item {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dropdown-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.dropdown-desc {
+    font-size: 12px;
+    color: #666;
+    margin: 2px 0 0 0;
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.dropdown-view-profile {
+    display: block;
+    width: 100%;
+    height: 25px;
+    padding: 2px;
+    border: 1px solid #0073b1;
+    background: #fff;
+    color: #0073b1;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.dropdown-view-profile:hover {
+    background: #0073b1;
+    color: #fff;
+}
+
+.dropdown-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.dropdown-section {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    margin: 5px 0;
+}
+
+.dropdown-link {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.dropdown-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-signout {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.dropdown-signout:hover {
+    text-decoration: underline;
+}
+
+.container-header-icon-1 {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background: #fff;
+}
+
+
+.icon-item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.hyder-icon-1 {
+    font-size: 17px;
+}
+
+.hyder-icon-2 {
+    font-size: 17px;
+    color: #F8C77E;
+}
+
+
+
+.icon-text-1 {
+    margin-top: 3px;
+}
+
+.icon-text-2 {
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.icon-text-3 {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.icon-item-1:hover {
+    color: black;
+}
+
+.dropdown-1 {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-menu-1 {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 253px;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu-1.active {
+    display: block;
+}
+
+.dropdown-header-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-profile-img-1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.for-business-toggle {
+    position: relative;
+    display: inline-block;
+}
+
+/* الحاوية الرئيسية */
+.dropdownForBusiness {
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 700px;
+    padding: 10px;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 600px;
+    /* ارتفاع أقصى مناسب */
+    overflow-y: auto;
+}
+
+.dropdownForBusiness.active {
+    display: block;
+}
+
+/* تقسيم الأعمدة */
+.dropdown-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* العمود الشمال */
+.dropdown-left {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.dropdown-left-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    color: black;
+}
+
+.dropdown-left-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 8px;
+    color: black;
+}
+
+.dropdown-left-item {
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #666;
+
+}
+
+.dropdown-left-icon {
+    margin-right: 8px;
+    color: #0073b1;
+    font-size: 23px;
+
+}
+
+/* العمود اليمين */
+.dropdown-right {
+    flex: 2;
+    padding-left: 20px;
+
+}
+
+.dropdown-right-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    color: black;
+}
+
+.dropdown-right-item {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #666;
+
+}
+
+.dropdown-right-item-title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.dropdown-right-item-span {
+    font-size: 12px;
+    color: #555;
+}
+
+.dropdown-right-icon {
+    margin-left: 5px;
+    color: #0073b1;
 }

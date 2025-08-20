@@ -3,6 +3,11 @@
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .hyder {
+        background-color: white;
+        position: static;
+        height: 55px;
+    }
 
     .search-text,
     .js-example-placeholder-multiple {
@@ -19,6 +24,44 @@
         width: 100%;
         margin-top: 10px;
     }
+
+    .search-text,
+    .js-example-placeholder-multiple {
+        display: none !important;
+    }
+
+    .search-wrapper {
+        border: none;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding: 0;
+    }
+
+    .search-icon {
+        position: static;
+        transform: none;
+        margin-left: 10px;
+    }
+
+    .icon-text {
+        display: none !important;
+    }
+
+    .me-item {
+        display: none !important;
+    }
+
+    .more-item {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+        color: #666;
+        cursor: pointer;
+        margin-left: -30px;
+    }
+
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
