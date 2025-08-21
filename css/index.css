@@ -13,41 +13,66 @@ body {
 }
 
 .linkedIn-icon-header {
-    margin-top: 10px;
+    margin-top: 14px;
     color: #0A66C2;
-    font-size: 24px;
+    font-size: 30px;
 }
 
-.search-wrapper {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    gap: 10px;
-    position: relative;
-    width: 70%;
-    height: 30px;
-    border: 1px solid #B2B2B2;
-    border-radius: 25px;
-    padding: 6px 12px;
-    background-color: #fff;
+.linkedIn-icon {
+    margin-right: 3px;
+    font-size: 30px;
 }
+
+.search-wrapper {}
 
 .search-icon {
     position: absolute;
     left: 12px;
-    top: 50%;
+    top: 63%;
     transform: translateY(-50%);
-    color: #999;
+    color: #404040;
+    pointer-events: none;
 }
 
 .search-text {
     position: absolute;
     left: 32px;
-    top: 50%;
+    top: 63%;
     transform: translateY(-50%);
     color: #999;
     font-size: 14px;
     pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.typeahead__container .typeahead__field input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+    width: 85%;
+    height: 30px !important;
+    min-height: 0 !important;
+    line-height: 33px !important;
+    border: 1px solid #B2B2B2;
+    border-radius: 25px;
+    padding: 6px 12px;
+    padding-left: 33px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.typeahead__field input:focus {
+    border-color: #000 !important;
+    width: 100% !important;
+}
+
+.typeahead__cancel-button {
+    display: none;
+}
+
+.typeahead__container.result .typeahead__list {
+    border-radius: 10px;
 }
 
 .select2-container--default .select2-selection--multiple {
@@ -69,7 +94,6 @@ body {
     padding: 10px 0;
     background: #fff;
 }
-
 
 .icon-item {
     display: flex;
@@ -233,7 +257,6 @@ body {
     background: #fff;
 }
 
-
 .icon-item-1 {
     display: flex;
     flex-direction: column;
@@ -251,8 +274,6 @@ body {
     font-size: 17px;
     color: #F8C77E;
 }
-
-
 
 .icon-text-1 {
     margin-top: 3px;
@@ -310,37 +331,29 @@ body {
 
 .for-business-toggle {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
-/* الحاوية الرئيسية */
 .dropdownForBusiness {
     position: absolute;
-    top: 56px;
+    top: 63px;
     right: 0px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 700px;
     padding: 10px;
-    display: block;
+    display: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-height: 600px;
-    /* ارتفاع أقصى مناسب */
     overflow-y: auto;
 }
 
-.dropdownForBusiness.active {
-    display: block;
-}
-
-/* تقسيم الأعمدة */
 .dropdown-content {
     display: flex;
     gap: 30px;
 }
 
-/* العمود الشمال */
 .dropdown-left {
     flex: 1;
     border-right: 1px solid #ddd;
@@ -378,7 +391,6 @@ body {
 
 }
 
-/* العمود اليمين */
 .dropdown-right {
     flex: 2;
     padding-left: 20px;
@@ -412,5 +424,13 @@ body {
 
 .dropdown-right-icon {
     margin-left: 5px;
-    color: #0073b1;
+    color: #000;
+}
+
+.dropdown-left-item:hover,
+.dropdown-right-item:hover {
+    text-decoration: underline;
+    text-decoration-color: #0073e6;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
