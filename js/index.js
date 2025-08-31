@@ -130,5 +130,25 @@ $(window).on('click', function (e) {
 });
 
 
+jQuery(document).ready(function ($) {
+    $('#edit-profile-name').each(function () {
+        var $btn = $(this);
+        var url = $btn.data('url'); // ناخد الرابط من data-url
 
+        var $dialog = $('<div></div>')
+            .load(url)
+            .dialog({
+                autoOpen: false,
+                title: $btn.attr('title'),
+                closeText: '',
+                width: 500,
+                height: 300
+            });
+
+        $btn.click(function (e) {
+            e.preventDefault();
+            $dialog.dialog('open');
+        });
+    });
+});
 
