@@ -130,25 +130,53 @@ $(window).on('click', function (e) {
 });
 
 
-jQuery(document).ready(function ($) {
-    $('#edit-profile-name').each(function () {
-        var $btn = $(this);
-        var url = $btn.data('url'); // ناخد الرابط من data-url
-
-        var $dialog = $('<div></div>')
-            .load(url)
-            .dialog({
-                autoOpen: false,
-                title: $btn.attr('title'),
-                closeText: '',
-                width: 500,
-                height: 300
-            });
-
-        $btn.click(function (e) {
-            e.preventDefault();
-            $dialog.dialog('open');
-        });
-    });
+document.getElementById("firstnameinput").addEventListener("input", function () {
+    document.getElementById("firstname").textContent = document.getElementById("firstnameinput").value;
 });
 
+document.getElementById("lastnameinput").addEventListener("input", function () {
+    document.getElementById("lastname").textContent = document.getElementById("lastnameinput").value;
+});
+
+// jQuery(document).ready(function ($) {
+//     $('#edit-profile-name').each(function () {
+//         var $btn = $(this);
+//         var url = $btn.data('url');
+//         var $dialog = $('<div></div>')
+//             .load(url)
+//             .dialog({
+//                 autoOpen: false,
+//                 title: $btn.attr('title'),
+//                 closeText: '',
+//                 width: 500,
+//                 height: 300,
+//             });
+//         $btn.click(function (e) {
+//             e.preventDefault();
+//             $dialog.dialog('open');
+//         });
+//     });
+// });
+
+
+
+
+
+$("#dialog").dialog({
+    autoOpen: false,
+    draggable: false,
+    resizable: false,
+    modal: true,
+    buttons: [
+        {
+            text: "sava",
+            click: function () {
+                $(this).dialog("close");
+            }
+        }
+    ]
+});
+
+$("#opener").click(function () {
+    $("#dialog").dialog("open");
+});

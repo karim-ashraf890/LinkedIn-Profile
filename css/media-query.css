@@ -121,6 +121,11 @@
         object-fit: cover;
     }
 
+    .education-container {
+        display: none;
+    }
+
+
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
