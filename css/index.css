@@ -16,6 +16,8 @@ body {
     margin-top: 14px;
     color: #0A66C2;
     font-size: 30px;
+    margin-left: 68px;
+
 }
 
 .linkedIn-icon {
@@ -441,6 +443,8 @@ body {
     display: flex;
     margin-top: 20px;
     cursor: pointer;
+    margin-left: 68px;
+    /* A recent addition that can be cancelled normally if the world goes wrong */
 }
 
 .Personal-page-cover {
@@ -474,13 +478,22 @@ body {
 }
 
 .Profile-picture {
-    width: 152px;
+    /* width: 152px;
     height: 152px;
     border-radius: 50%;
     position: absolute;
     left: 145px;
     top: 165px;
+    border: 4px solid white; */
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    position: absolute;
+    left: 220px;
+    top: 165px;
     border: 4px solid white;
+    /* A recent addition that can be cancelled normally if the world goes wrong */
+
 }
 
 .edit-profile-name-container {
@@ -540,6 +553,8 @@ body {
     margin-top: 0px;
     display: flex;
     cursor: pointer;
+    margin-left: 68px;
+    /* A recent addition that can be cancelled normally if the world goes wrong */
 }
 
 .Profile-details {
@@ -565,7 +580,7 @@ body {
 }
 
 .Profile-name:hover {
-    width: 24%;
+    width: 25%;
     background-color: #d7d6d6;
 }
 
@@ -805,4 +820,141 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
+}
+
+.btn-open-to {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* max-width: 480px; */
+    height: 30px;
+    border-radius: 15px;
+    background-color: #0A66C2;
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    /* margin-right: 5px; */
+}
+
+.btn-open-to:hover {
+    background-color: #084d91;
+
+}
+
+.dropdown-open-container-to {
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    width: 260px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+}
+
+.dropdown-open-container-to-act {
+    display: block;
+
+}
+
+.dropdown-item {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.dropdown-item strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.dropdown-item p {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    white-space: normal;
+    /* يسمح بلف النص لعدة أسطر */
+    word-wrap: break-word;
+    /* يكسر الكلمة الطويلة عند نهاية السطر */
+    overflow-wrap: break-word;
+}
+
+.dropdown-item:hover {
+    background: #f3f6f8;
+    /* لون عند التحويم */
+}
+
+
+.btn-add-profile {
+    border: 1px solid #478CD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #00000000;
+    color: #0a66c2;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.btn-add-profile:hover {
+    border: 2px solid #004182;
+    background-color: #EBF4FD;
+    color: #004182;
+
+
+}
+
+.btn-enhance-profile {
+    border: 1px solid #478CD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #00000000;
+    color: #0a66c2;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    /* margin-left: 25px; */
+}
+
+.btn-enhance-profile:hover {
+    border: 2px solid #004182;
+    background-color: #EBF4FD;
+    color: #004182;
+}
+
+.btn-resources {
+    border: 1px solid #404050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #404040;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
+.btn-resources:hover {
+    border: 2px solid #181818;
+    background-color: #F3F3F3;
+    color: #181818;
 }

@@ -180,3 +180,40 @@ $("#dialog").dialog({
 $("#opener").click(function () {
     $("#dialog").dialog("open");
 });
+
+var btnOpenTo = $('#btn-open-to');
+var dropdownOpenTo = $('.dropdown-open-container-to');
+
+btnOpenTo.on('click', function () {
+    if (dropdownOpenTo.css('display') === 'block') {
+        dropdownOpenTo.css('display', 'none');
+    } else {
+        dropdownOpenTo.css('display', 'block');
+    }
+});
+
+$(window).on('click', function (e) {
+    if (!e.target.closest('#btn-open-to')) {
+        dropdownOpenTo.css('display', 'none');
+    }
+});
+
+
+$("#dialogaddprofile").dialog({
+    autoOpen: false,
+    draggable: false,
+    resizable: false,
+    modal: true,
+    buttons: [
+        {
+            text: "sava",
+            click: function () {
+                $(this).dialog("close");
+            }
+        }
+    ]
+});
+
+$("#openeraddprofile").click(function () {
+    $("#dialogaddprofile").dialog("open");
+});
