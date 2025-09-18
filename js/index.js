@@ -129,10 +129,18 @@ $(window).on('click', function (e) {
     }
 });
 
+let first_username = "Karim";
+document.getElementById("firstname").innerHTML = first_username;
+document.getElementById("firstnameinput").value = first_username;
 
 document.getElementById("firstnameinput").addEventListener("input", function () {
-    document.getElementById("firstname").textContent = document.getElementById("firstnameinput").value;
+    document.getElementById("firstname").textContent =
+        document.getElementById("firstnameinput").value;
 });
+
+let last_username = "Ashrf";
+document.getElementById("lastname").innerHTML = last_username;
+document.getElementById("lastnameinput").value = last_username;
 
 document.getElementById("lastnameinput").addEventListener("input", function () {
     document.getElementById("lastname").textContent = document.getElementById("lastnameinput").value;
