@@ -2,6 +2,11 @@ body {
     background-color: #F4F2EE;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 .container {
     /* styles here if needed */
 }
@@ -302,6 +307,7 @@ body {
 }
 
 .dropdown-menu-1 {
+    z-index: 10;
     position: absolute;
     top: 45px;
     right: 0;
@@ -457,7 +463,7 @@ body {
 .Camera-icon-container {
     display: flex;
     position: absolute;
-    right: 530px;
+    right: 35%;
     top: 110px;
     width: 28px;
     height: 28px;
@@ -505,7 +511,7 @@ body {
     border: none;
     background-color: white;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 35px;
     height: 35px;
     color: #303030;
@@ -559,7 +565,7 @@ body {
 
 .Profile-details {
     border-radius: 0px 0px 13px 13px;
-    height: 300px;
+    height: 450px;
     width: 100%;
     object-fit: cover;
 }
@@ -880,15 +886,12 @@ body {
     color: #666;
     margin: 0;
     white-space: normal;
-    /* يسمح بلف النص لعدة أسطر */
     word-wrap: break-word;
-    /* يكسر الكلمة الطويلة عند نهاية السطر */
     overflow-wrap: break-word;
 }
 
 .dropdown-item:hover {
     background: #f3f6f8;
-    /* لون عند التحويم */
 }
 
 
@@ -932,6 +935,24 @@ body {
     /* margin-left: 25px; */
 }
 
+.btn-enhance-profile-mobile {
+    border: 1px solid #478CD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #00000000;
+    color: #0a66c2;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    /* margin-left: 25px; */
+    display: none;
+
+}
+
 .btn-enhance-profile:hover {
     border: 2px solid #004182;
     background-color: #EBF4FD;
@@ -953,8 +974,154 @@ body {
     margin-bottom: 2px;
 }
 
+.btn-resources-mobile {
+    border: 1px solid #404050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #404040;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    display: none;
+}
+
 .btn-resources:hover {
     border: 2px solid #181818;
     background-color: #F3F3F3;
     color: #181818;
+}
+
+div[aria-describedby="dialogaddprofile"] {
+    width: 577px !important;
+    height: 455px;
+    margin-top: 15px !important;
+    padding: 0 !important;
+    border-radius: 20px !important;
+}
+
+div[aria-describedby="dialogaddprofile"]>.ui-dialog-content {
+    background-color: yellow !important;
+    min-height: 240px;
+    background: #fff !important;
+    width: 574px !important;
+    max-height: 380px !important;
+    overflow-y: 450px !important;
+    padding: 0px !important;
+    position: relative !important;
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.dialog-text-container-add-profile-section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.text-add-profile-section1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.text-add-profile-section2 {
+    margin-top: 3px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.get-started-btn {
+    background: #0A66C2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background: #064b90;
+
+}
+
+.get-started-note {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.ui-accordion {
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ui-accordion-header {
+    background: white !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    color: #000 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    font-weight: 600;
+}
+
+.ui-accordion-header:last-of-type {
+    border-bottom: none !important;
+}
+
+.ui-accordion-header-active {
+    background: white !important;
+    color: #000 !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+}
+
+.ui-accordion-content {
+    background: white !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #000 !important;
+
+}
+
+.ui-accordion-header .ui-accordion-header-icon {
+    order: 2 !important;
+    /* display: flex; */
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.ui-accordion-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.text-accordion1 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.text-accordion2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666 !important;
+    border-bottom: 1px solid #ccc !important;
+    padding-bottom: 7px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: block;
 }

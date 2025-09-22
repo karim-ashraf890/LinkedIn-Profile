@@ -126,6 +126,72 @@
         display: none;
     }
 
+    .ui-dialog {
+        width: 90% !important;
+        margin-top: 15px !important;
+    }
+
+    .ui-dialog-content {
+        width: auto !important;
+        max-height: 70vh !important;
+        padding: 15px !important;
+    }
+
+    .ui-dialog-title {
+        font-size: 16px !important;
+    }
+
+    .ui-dialog-titlebar-close {
+        font-size: 30px !important;
+        top: 5px !important;
+        right: 5px !important;
+    }
+
+    .btn-enhance-profile {
+        display: none;
+
+    }
+
+    .btn-enhance-profile-mobile {
+        display: block;
+        margin-left: 40px;
+
+
+    }
+
+    .btn-resources {
+        display: none;
+
+    }
+
+    .btn-resources-mobile {
+        display: block;
+        width: 75%;
+
+    }
+
+    div[aria-describedby="dialogaddprofile"] {
+        width: 90% !important;
+        height: auto !important;
+        margin: 15px auto !important;
+        border-radius: 12px !important;
+    }
+
+    div[aria-describedby="dialogaddprofile"]>.ui-dialog-content {
+        width: 100% !important;
+        max-height: none !important;
+        padding: 10px !important;
+    }
+
+    .text-accordion1 {
+        font-size: 13px;
+    }
+
+    .text-accordion2 {
+        font-size: 14px;
+        padding-bottom: 6px;
+    }
+
 
 }
 

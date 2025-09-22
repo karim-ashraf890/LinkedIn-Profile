@@ -134,7 +134,7 @@ document.getElementById("firstname").innerHTML = first_username;
 document.getElementById("firstnameinput").value = first_username;
 
 document.getElementById("firstnameinput").addEventListener("input", function () {
-    document.getElementById("firstname").textContent =
+    document.getElementById("firstname").innerHTML =
         document.getElementById("firstnameinput").value;
 });
 
@@ -143,7 +143,7 @@ document.getElementById("lastname").innerHTML = last_username;
 document.getElementById("lastnameinput").value = last_username;
 
 document.getElementById("lastnameinput").addEventListener("input", function () {
-    document.getElementById("lastname").textContent = document.getElementById("lastnameinput").value;
+    document.getElementById("lastname").innerHTML = document.getElementById("lastnameinput").value;
 });
 
 // jQuery(document).ready(function ($) {
@@ -212,16 +212,26 @@ $("#dialogaddprofile").dialog({
     draggable: false,
     resizable: false,
     modal: true,
-    buttons: [
-        {
-            text: "sava",
-            click: function () {
-                $(this).dialog("close");
-            }
-        }
-    ]
+    position: {
+        my: "center top",
+        at: "center top",
+        of: window,
+    }
 });
 
 $("#openeraddprofile").click(function () {
     $("#dialogaddprofile").dialog("open");
+});
+
+
+$("#accordion").accordion({
+    header: "h3",
+    icons: {
+        header: "ui-icon-caret-1-s",
+        activeHeader: "ui-icon-caret-1-n"
+    },
+    collapsible: true,
+    active: false,
+    heightStyle: "content",
+    widthtStyle: "200px",
 });
