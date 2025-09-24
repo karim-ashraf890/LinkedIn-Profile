@@ -235,3 +235,20 @@ $("#accordion").accordion({
     heightStyle: "content",
     widthtStyle: "200px",
 });
+$(document).ready(function () {
+    $('.neutron-slider').neutronSlider({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        centerMode: false,
+        adaptiveHeight: true,
+        gap: 10,
+        dots: false,
+        loop: false,
+        autoplay: false,
+        prevArrow: '.prev-arrow',
+        nextArrow: '.next-arrow',
+    });
+});
